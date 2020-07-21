@@ -1,5 +1,5 @@
 if (process.env.NODE_ENV === 'development') {
-  script = document.createElement('script');
+  const script = document.createElement('script');
   script.type = 'text/javascript';
   script.async = true;
   script.src = 'http://localhost:35729/livereload.js';
