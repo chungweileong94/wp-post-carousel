@@ -1,0 +1,87 @@
+.wr__post-carousel {
+  padding: 50px 0;
+}
+
+.wr__post-items-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.wr__post-items {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+}
+
+.wr__post-items.shifting {
+  transition: left 0.2s ease-out;
+}
+
+.wr__post-item {
+  width: 70vw;
+  margin: 0 10px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.wr__post-item.selected .wr__post-item__info-wrapper {
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.wr__post-item__info-wrapper {
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wr__post_item__image {
+  width: 100%;
+  margin-bottom: 38px;
+}
+
+.wr__post_item__title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+.wr__post_item__excerpt {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.wr__post-item__book-button {
+  background: #4ad1ad;
+  border-radius: 45px;
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 12px 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .wr__post-item {
+    margin: 0 50px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .wr__post-item {
+    margin: 0 150px;
+  }
+}
